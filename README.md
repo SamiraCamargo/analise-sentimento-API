@@ -13,15 +13,15 @@ Este projeto foi desenvolvido como parte de um teste técnico, com o objetivo de
 - Uvicorn
 - Joblib
 
-## 📂 Estrutura do projeto
-├── data/ # Dataset utilizado
-├── model/ # Modelo treinado e vectorizer
-├── app/
-│ └── main.py # API com FastAPI
-├── train.py # Script de treinamento do modelo
-├── preprocess.py # Funções de limpeza de texto
-├── requirements.txt # Dependências do projeto
-└── README.md
+## 📁 Estrutura do projeto
+
+- data/ → Dataset utilizado  
+- model/ → Modelo treinado e vectorizer  
+- app/ → API com FastAPI  
+- train.py → Script de treinamento do modelo  
+- preprocess.py → Funções de limpeza de texto  
+- requirements.txt → Dependências do projeto  
+- README.md → Documentação do projeto  
 
 ## 📊 Dataset
 
