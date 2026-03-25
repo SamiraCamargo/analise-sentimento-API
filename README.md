@@ -65,6 +65,18 @@ Motivos da escolha:
 
 ---
 
+## 🔢 Vetorização
+
+Foi utilizado:
+
+👉 **TF-IDF (Term Frequency - Inverse Document Frequency)**
+
+- Transforma texto em números
+- Considera relevância das palavras
+- Limita features para melhor performance
+
+----
+
 ## 📈 Métricas de avaliação
 
 Foram utilizadas:
@@ -75,17 +87,17 @@ Foram utilizadas:
 - F1-score
 
 Resultado obtido:
-
 👉 **Acurácia aproximada: 91%**
+
 ## 🔌 API
 
 Foi criada uma API utilizando **FastAPI** para disponibilizar o modelo.
 
 ### ▶️ Como executar
 
-```bash'''
+```bash
 uvicorn app.main:app --reload
-
+```
 📍 Endpoint
 POST /predict
 
@@ -100,20 +112,23 @@ POST /predict
   "sentimento_previsto": "positive"
 }
 
-☁️ Arquitetura (conceitual - AWS)
+## ☁️ Arquitetura (conceitual - AWS)
 
 Em um cenário de produção, a solução poderia ser estruturada com:
 
-Amazon S3 → armazenamento de dados e modelo
-AWS Lambda → execução da inferência
-API Gateway → exposição da API
-processamento batch para múltiplas análises
+- Amazon S3 → armazenamento de dados e modelo  
+- AWS Lambda → execução da inferência  
+- API Gateway → exposição da API  
+- Processamento batch para análises em larga escala  
 
-💡 Considerações finais
+--
+
+## 💡 Considerações finais
+
 O projeto atende ao objetivo de classificar reviews de produtos e disponibilizar essa funcionalidade via API.
 
-Possíveis melhorias:
-testar outros modelos
-ajuste de hiperparâmetros
-deploy em cloud
-monitoramento do modelo em produção
+### 🔧 Possíveis melhorias:
+- Testar outros modelos  
+- Ajuste de hiperparâmetros  
+- Deploy em cloud  
+- Monitoramento do modelo em produção  
